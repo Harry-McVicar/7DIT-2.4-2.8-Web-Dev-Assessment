@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Tourney&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-family: 'Tourney', cursive;
+}
+
+:root {
+  --primary: #4169e1;
+  --dark: #4169b1;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav i, nav li {
+  padding: 15px;
+}
+
+nav li {
+  background: var(--primary);
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  border-radius: 10px;
+  list-style: none;
+  text-transform: uppercase;
+  transition: 0.8s;
+  line-height: 2;
+}
+
+nav li:hover {
+  background: var(--dark);
+  transition: 0.8s;
+}
+
+.active {
+  background: var(--dark);
+}
+
+.showcase {
+  background: url(img/showcase.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  line-height: 2;
+}
+
+.showcase h1 {
+  font-size: 50px;
+  margin-top: 10%;
+
+}
+
+.showcase p {
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px 40px;
+  margin: 0px 50px;
+  background-color: rgba(65, 105, 225, 0.4);
+  border-radius: 60px;
+}
+
+footer {
+  background: var(--primary);
+  text-align: center;
+  padding: 30px;
+}
