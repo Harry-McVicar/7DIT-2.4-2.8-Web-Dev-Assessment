@@ -6,11 +6,13 @@
   color: white;
   text-decoration: none;
   font-family: 'Tourney', cursive;
+  scroll-behavior: smooth;
 }
 
 :root {
   --primary: #4169e1;
   --dark: #4169b1;
+  --border: 4px solid white;
 }
 
 nav ul {
@@ -66,6 +68,27 @@ nav li:hover {
   margin: 0px 50px;
   background-color: rgba(65, 105, 225, 0.4);
   border-radius: 60px;
+}
+
+#scroll {
+  position: absolute;
+  bottom: 10vh;
+  left: 48vw;
+}
+
+iframe {
+  border: var(--border);
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  margin: 30px;
+  width: 95vw;
+  height: 60vh;
+}
+
+#location {
+  background: var(--dark);
+  border-top: var(--border);
+  border-bottom: var(--border);
 }
 
 footer {
