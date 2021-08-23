@@ -70,7 +70,7 @@ nav li:hover {
   border-radius: 60px;
 }
 
-#scroll {
+#scroll-down {
   position: absolute;
   bottom: 10vh;
   left: 48vw;
@@ -89,6 +89,37 @@ iframe {
   background: var(--dark);
   border-top: var(--border);
   border-bottom: var(--border);
+}
+
+#content {
+  text-align: center;
+  background: var(--dark);
+  border: var(--border);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#content p {
+  padding: 20px 10vw;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#content img {
+  position: relative;
+  left: 3.5vw;
+  width: 30vw;
+}
+
+#scroll-left {
+  position: relative;
+  right: 50vw;
+  bottom: 15vh;
+}
+
+#scroll-right {
+  position: relative;
+  left: 20vw;
+  bottom: 15vh;
 }
 
 footer {
