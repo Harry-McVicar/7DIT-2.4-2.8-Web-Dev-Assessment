@@ -20,11 +20,8 @@ nav ul {
   flex-direction: row;
 }
 
-nav i, nav li {
+nav a:not(#logo) {
   padding: 15px;
-}
-
-nav li {
   background: var(--primary);
   width: 100%;
   margin: 10px;
@@ -37,12 +34,17 @@ nav li {
   line-height: 2;
 }
 
-nav li:hover {
+nav a:hover:not(#logo) {
   background: var(--dark);
   transition: 0.8s;
 }
 
-.active {
+#logo {
+  margin: 15px;
+  list-style: none;
+}
+
+.showcase #active {
   background: var(--dark);
 }
 
@@ -106,6 +108,7 @@ iframe {
 
 #content img {
   position: relative;
+  border-radius: 10px;
   left: 3.5vw;
   width: 30vw;
 }
