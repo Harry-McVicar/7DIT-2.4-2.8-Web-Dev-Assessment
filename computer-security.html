@@ -25,13 +25,42 @@
       <a href="#content"><i class="fas fa-chevron-circle-down fa-3x" id="scroll-down"></i></a>
     </section>
   </header>
-  <section id="content">
-    <h1>What is computer security and why is it so important?</h1>
-    <p>When dealing with computer security, the AIC triad must be considered. This involves the three catagories of availability, integrity and confidentiality which must be delicately balanced in order to ensure the development of a well robust, easy to use sytem. The way in which these are balanced depends heavily on the level of security required for the sytem as in some cases integrity and confidentiality may be partially sacrificed for better availability or vice versa.</p>
-    <p>Availability refers to maintaining functionality of our digital systems so that our data is available when and where we need it. Integrity identifies the importance of maintaining accurate data which can be neither altered nor deleted by either human error or through malicious attacks. Finally, confidentiality defines the importance that our data remains private and that it is not intercepted while being transmitted across the internet. </p>
-    <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-    <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-    <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+  <section class="container" id="content">
+    <div class="btn-container">
+      <button class="tab-btn active" data-id="about">About</button>
+      <button class="tab-btn" data-id="passwords">Passwords</button>
+      <button class="tab-btn" data-id="firewalls">Firewalls</button>
+      <button class="tab-btn" data-id="users">Users</button>
+    </div>
+    <div class="content active" id="about">
+      <h1>What is computer security and why is it so important?</h1>
+      <p>When dealing with computer security, the AIC triad must be considered. This involves the three catagories of availability, integrity and confidentiality which must be delicately balanced in order to ensure the development of a well robust, easy to use sytem. The way in which these are balanced depends heavily on the level of security required for the sytem as in some cases integrity and confidentiality may be partially sacrificed for better availability or vice versa.</p>
+      <p>Availability refers to maintaining functionality of our digital systems so that our data is available when and where we need it. Integrity identifies the importance of maintaining accurate data which can be neither altered nor deleted by either human error or through malicious attacks. Finally, confidentiality defines the importance that our data remains private and that it is not intercepted while being transmitted across the internet. </p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="passwords">
+      <h1>Passwords - choice, usage and strorage</h1>
+      <p>Passwords are a vital necessity to computer security and so we must apply careful consideration, especially when applied to high security sytems. There are a series of rules to follow in order to safely choose, use and store your passwords. When choosing your password, you should aim to maximise the complexity and randomness as this will reduce the risk of it being discovered with a brute force attack. Since there are 96 possible characters to use for your password, each character you add will make it 96 times more difficult to guess. You should also use two-factor authentication as this will ensure that even if hackers discover your password, they won't be able to gain access without the second authentication method which is often touch of face id or a message with a key to your phone. Network engineers often set heriachries in order to restrict access of certain users to particular parts of a network, minimizing the risk if the password were to become comprimised.  You should avoid using your passwords on multiple sites as your password could become breached by hackers on a low security site and used to access your confidential information on a high security site.</p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="firewalls">
+      <h1>Network protection and firewalls</h1>
+      <p></p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="users">
+      <h1>Social engineering and user protection</h1>
+      <p></p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
   </section>
   <footer>The Computer Science Hub &copy; 2021</footer>
   <script src="app.js" charset="utf-8"></script>

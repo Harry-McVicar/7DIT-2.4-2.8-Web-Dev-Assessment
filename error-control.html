@@ -25,12 +25,41 @@
       <a href="#content"><i class="fas fa-chevron-circle-down fa-3x" id="scroll-down"></i></a>
     </section>
   </header>
-  <section id="content">
-    <h1>What is error control and why is it so important?</h1>
-    <p>Errors occur in digital data as a result of data corruption, human error, data decay and transmintion data corruption. Data corruption involves errors in computer data that occur during writing, reading, storage, transmition or processing that result in unintentional changes. Human errors often occur during data entry with individuals typing in incorrect information. Data decay may occur to stored data as a result of failing circuits or from bits losing their magnetic orientation or electrical charge. Transmition data corruption occurs when transmition is interupted by either interfering waves or poor environmental conditions and results in incorrect data being recieved.</p>
-    <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-    <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-    <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+  <section class="container" id="content">
+    <div class="btn-container">
+      <button class="tab-btn active" data-id="about">About</button>
+      <button class="tab-btn" data-id="barcodes">Barcodes</button>
+      <button class="tab-btn" data-id="algorithms">Algorithms</button>
+      <button class="tab-btn" data-id="implications">Implications</button>
+    </div>
+    <div class="content active" id="about">
+      <h1>What is error control and why is it so important?</h1>
+      <p>Errors occur in digital data as a result of data corruption, human error, data decay and transmintion data corruption. Data corruption involves errors in computer data that occur during writing, reading, storage, transmition or processing that result in unintentional changes. Human errors often occur during data entry with individuals typing in incorrect information. Data decay may occur to stored data as a result of failing circuits or from bits losing their magnetic orientation or electrical charge. Transmition data corruption occurs when transmition is interupted by either interfering waves or poor environmental conditions and results in incorrect data being recieved.</p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="barcodes">
+      <h1>Barcodes, checksums and parity bits</h1>
+      <p>All barcodes are designed with a final digit to check that the barcode is correct, known as a checksum. In order to calculate the checksum every second digit in the barcode is multiplied by three and all of the new digits are added together. The checksum is the number required to round the total up to the nearest ten.</p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="algorithms">
+      <h1>Human error and error controlling algorithms</h1>
+      <p></p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="implications">
+      <h1>Real world implications of error control</h1>
+      <p></p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
   </section>
   <footer>The Computer Science Hub &copy; 2021</footer>
   <script src="app.js" charset="utf-8"></script>

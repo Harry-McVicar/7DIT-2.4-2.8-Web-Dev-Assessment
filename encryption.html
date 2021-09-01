@@ -25,12 +25,41 @@
       <a href="#content"><i class="fas fa-chevron-circle-down fa-3x" id="scroll-down"></i></a>
     </section>
   </header>
-  <section id="content">
-    <h1>What is encyption and why is it so important?</h1>
-    <p>Encryption is important as it prevents private data from being accessible to hackers, who could potentially use your personal details to blackmail or target you with phishing schemes. Some encryption methods are more breakable than others, such as caesar cipher, but the algorithms used in modern society are typically very sturdy. The public-private key method which is primarily used today is extremely hard to break, but not impossible.</p>
-    <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-    <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-    <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+  <section class="container" id="content">
+    <div class="btn-container">
+      <button class="tab-btn active" data-id="about">About</button>
+      <button class="tab-btn" data-id="keys">Keys</button>
+      <button class="tab-btn" data-id="passwords">Passwords</button>
+      <button class="tab-btn" data-id="implications">Implications</button>
+    </div>
+    <div class="content active" id="about">
+      <h1>What is encyption and why is it so important?</h1>
+      <p>Encryption is important as it prevents private data from being accessible to hackers, who could potentially use your personal details to blackmail or target you with phishing schemes. Some encryption methods are more breakable than others, such as caesar cipher, but the algorithms used in modern society are typically very sturdy. The public-private key method which is primarily used today is extremely hard to break, but not impossible.</p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="keys">
+      <h1>The key distribution problem</h1>
+      <p>The fundamental issue of the key distribution problem is that, while the ciphertext can be sent safely across an unsecure network, the key cannot. Single key encryption, also known as symmetric encryption, uses the same key to encrypt the message as it uses to decrypt the message. This means that the user and the sender must each know the key in order to send and read one another’s messages. Their data cannot be intercepted by hackers as only they know the secret key. Public key encryption, also called asymmetric encryption, uses a one way function / algorithm which enables people to send encrypted messages. This method encrypts the sender’s plain text with the receiver’s public key. The cipher text can therefore only be decrypted using the receiver’s private key, and can not be intercepted by hackers, solving the key distribution problem.</p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="passwords">
+      <h1>Storing passwords securely</h1>
+      <p></p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
+    <div class="content" id="implications">
+      <h1>Real world implications of encryption</h1>
+      <p></p>
+      <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
+      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
+      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
+    </div>
   </section>
   <footer>The Computer Science Hub &copy; 2021</footer>
   <script src="app.js" charset="utf-8"></script>
