@@ -48,7 +48,8 @@
     </div>
     <div class="content" id="passwords">
       <h1>Storing passwords securely</h1>
-      <p></p>
+      <p>Hashing and salting algorithms are often used to store passwords securely within confidential databases. Hashing is the process of converting a password into an unidentifiable string using a one way function, meaning it can not be reversed. Salting is the process of adding extra data onto the password before it is hashed which ensures that if two user's choose the same password, they will not recieve the same hash. The hash values of the users can be stored on a secure database and used to check if the users enter the correct password by checking if the password they entered matches one on the database. If a hacker manages to access the password database, they would not be able to determine the actual passwords. Salting further improves the security of the hashing system however can still be breached with a brute force attack in which every possible password is tried until the correct one is found.
+      <p>A modern GPU can run a brute force attack at a speed of 292 million hashes per second, meaning it's only a matter of time before you're password is found. In order to speed up this process, the GPU can also use a rainbow table which contains lists of precomputed hashes that enable it to quickly find weak and commonly used passwords. In order to counter the possibility of brute force attacks, passwords can be stored via bcrypt, scrypt or argon2 algorithms which add a cost, increasing the time required for a hack to occur. Even more robust systems can be used to safely store user passwords by using a multilayer protection system which protects your password by a salt, hash and encryption method which would have to be breached one after another for a hacker to access your password. This would cost a lot of time and money and would likely not be worth their while.</p></p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
       <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
       <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
@@ -60,6 +61,12 @@
       <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
       <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
+  </section>
+  <section class="quiz encryption">
+    <h1>Define the following terms</h1>
+    <div id="quiz"></div>
+    <button id="submit">Get Results</button>
+    <div id="results"></div>
   </section>
   <footer>The Computer Science Hub &copy; 2021</footer>
   <script src="app.js" charset="utf-8"></script>

@@ -12,7 +12,8 @@
 :root {
   --primary: #4169e1;
   --dark: #4169b1;
-  --border: 4px solid white;
+  --border: 2px solid white;
+  --font: 'Roboto Mono', monospace;
 }
 
 nav ul {
@@ -65,7 +66,7 @@ nav a:hover:not(#logo) {
 
 .showcase p {
   font-size: 20px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: var(--font);
   padding: 10px 40px;
   margin: 0px 50px;
   background-color: rgba(65, 105, 225, 0.4);
@@ -103,7 +104,8 @@ iframe {
 
 #content p {
   padding: 20px 10vw;
-  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  font-family: var(--font);
 }
 
 #content img {
@@ -138,7 +140,36 @@ iframe {
   background: var(--primary);
   padding: 10px 20px;
   margin: 0px 20px 20px 20px;
-  border: 2px solid white;
+  border: var(--border);
+  border-radius: 10px;
+}
+
+.quiz {
+  background: var(--dark);
+  text-align: center;
+  padding: 20px 10%;
+  border: var(--border);
+  border-radius: 10px;
+}
+
+.question {
+	font-size: 24px;
+	margin: 10px;
+	font-family: var(--font);
+}
+
+.answers {
+  margin-bottom: 20px;
+	text-align: justify;
+	font-family: var(--font);
+}
+
+.quiz #submit {
+  background: var(--primary);
+  border: var(--border);
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 10px;
 }
 
