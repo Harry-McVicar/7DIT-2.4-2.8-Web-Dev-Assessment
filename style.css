@@ -21,7 +21,7 @@ nav ul {
   flex-direction: row;
 }
 
-nav a:not(#logo) {
+nav li:not(#logo) {
   padding: 15px;
   background: var(--primary);
   width: 100%;
@@ -35,7 +35,7 @@ nav a:not(#logo) {
   line-height: 2;
 }
 
-nav a:hover:not(#logo) {
+nav li:hover:not(#logo) {
   background: var(--dark);
   transition: 0.8s;
 }
@@ -53,14 +53,14 @@ nav a:hover:not(#logo) {
   background: url(img/showcase.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   line-height: 2;
 }
 
 .showcase h1 {
   font-size: 50px;
-  margin-top: 10%;
+  margin-top: 5%;
 
 }
 
@@ -83,8 +83,8 @@ iframe {
   border: var(--border);
   border-radius: 10px;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  margin: 30px;
-  width: 95vw;
+  margin: 3.8vw;
+  width: 92vw;
   height: 60vh;
 }
 
@@ -107,6 +107,13 @@ iframe {
   font-family: var(--font);
   font-size: 18px;
   padding: 20px;
+}
+
+#details img {
+  text-align: center;
+  padding: 10px;
+  width: 30vw;
+  height: 35vh;
 }
 
 #content {
