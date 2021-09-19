@@ -164,6 +164,7 @@ iframe {
   margin: 0px 20px 20px 20px;
   border: var(--border);
   border-radius: 10px;
+  width: 200px;
 }
 
 .quiz {
