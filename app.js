@@ -19,7 +19,7 @@ container.addEventListener("click", function (e) {
   }
 })
 
-/*Javascript quiz*/
+/*Computer science quiz*/
 
 var encryptionQuestions = [
   {
@@ -342,4 +342,33 @@ else if (quizType.classList.contains("error-control")) {
 }
 else {
   generateQuiz(securityQuestions, quizContainer, resultsContainer, submitButton);
+}
+
+/*Drag and drop*/
+
+function onDragStart(event) {
+  event
+    .dataTransfer
+    .setData('text/plain', event.target.id);
+
+  event
+    .currentTarget
+    .style
+    .backgroundColor = '#DFA612';
+}
+
+function onDragOver(event) {
+  event.preventDefault();
+}
+
+function onDrop(event) {
+  const id = event
+    .dataTransfer
+    .getData('text');
+  const draggableElement = document.getElementById(id);
+  const dropzone = event.target;
+  dropzone.appendChild(draggableElement);
+  event
+    .dataTransfer
+    .clearData();
 }

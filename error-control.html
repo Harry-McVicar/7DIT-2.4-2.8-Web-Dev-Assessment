@@ -36,29 +36,21 @@
       <h1>What is error control and why is it so important?</h1>
       <p>Errors occur in digital data as a result of data corruption, human error, data decay and transmintion data corruption. Data corruption involves errors in computer data that occur during writing, reading, storage, transmition or processing that result in unintentional changes. Human errors often occur during data entry with individuals typing in incorrect information. Data decay may occur to stored data as a result of failing circuits or from bits losing their magnetic orientation or electrical charge. Transmition data corruption occurs when transmition is interupted by either interfering waves or poor environmental conditions and results in incorrect data being recieved. Noise is an unwanted high frequency disturbance or interference with the desired electrical signal. If too much noise is present, it can cause the signal of the communications line to be lost or corrupted. While it can be minimized, noise will always be present and will eventually disrupt the data transmition, even with the highest quality fibre optics cable.</p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
     <div class="content" id="barcodes">
       <h1>Barcodes, checksums and parity bits</h1>
       <p>All barcodes are designed with a final digit to check that the barcode is correct, known as a checksum. In order to calculate the checksum every second digit in the barcode is multiplied by three and all of the new digits are added together. The checksum is the number required to round the total up to the nearest ten. Parity bits work in a 2D grid arrangement in which each row and column must have an even number of each bit (0's and 1's). If there is not an even number of each bit in both the rows and the columns, an error must have occured in the data. Packets of data are generally around 1000 bytes and include the adress they are going from and to, the packet number and the total number of packets.</p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
     <div class="content" id="algorithms">
       <h1>Human error and error controlling algorithms</h1>
       <p>Human error often occurs during the input of data and consists of four primary types. Substitution errors occur when one values is substituted for another, transposition errors occur when the position of two values are swapped while missing and extra number errors occur when values are removed or added to the dataset. The checksum is designed to pick up on these common human errors and alert the system administrator of an incorrect barcode.</p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
     <div class="content" id="implications">
       <h1>Real world implications of error control</h1>
-      <p></p>
+      <p>Error control is an essential process that enables us to be confident that the correct data is stored, transmitted and recieved by detecting and correcting errors at both a bit and packet level. With applications ranging from barcodes to bank details and algorithms ranging from checksums to parity bits, it is vital to all user interfaces to maintain data integrity and reliability.</p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
   </section>
   <section class="quiz error-control">
@@ -66,6 +58,58 @@
     <div id="quiz"></div>
     <button id="submit">Get Results</button>
     <div id="results"></div>
+  </section>
+  <section class="drag-and-drop">
+    <h1>Throughout this topic you should have learnt the following:</h1>
+    <div
+    class="parent"
+    ondragover="onDragOver(event)"
+    ondrop="onDrop(event)"
+    >
+      <div class="origin">
+        <p>To Do</p>
+        <div
+          id="draggable-1"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event)"
+        >
+          How checksums are calculated and parity bits are used to prevent errors from occuring in digital data.
+        </div>
+        <div
+        id="draggable-2"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        The primary types of human error and the preventative error controling algorithms.
+      </div>
+      <div
+        id="draggable-3"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        The various types of errors that can occur in the input, storage and transmition of data.
+      </div>
+      <div
+        id="draggable-4"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        The importance of error control for real world implications.
+      </div>
+      </div>
+
+      <div
+        class="dropzone"
+        ondragover="onDragOver(event)"
+        ondrop="onDrop(event)"
+      >
+      <p>Done</p>
+      </div>
+    </div>
   </section>
   <footer>
     <p>The Computer Science Hub &copy; 2021</p>

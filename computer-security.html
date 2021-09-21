@@ -34,32 +34,23 @@
     </div>
     <div class="content active" id="about">
       <h1>What is computer security and why is it so important?</h1>
-      <p>When dealing with computer security, the AIC triad must be considered. This involves the three catagories of availability, integrity and confidentiality which must be delicately balanced in order to ensure the development of a well robust, easy to use sytem. The way in which these are balanced depends heavily on the level of security required for the sytem as in some cases integrity and confidentiality may be partially sacrificed for better availability or vice versa.</p>
-      <p>Availability refers to maintaining functionality of our digital systems so that our data is available when and where we need it. Integrity identifies the importance of maintaining accurate data which can be neither altered nor deleted by either human error or through malicious attacks. Finally, confidentiality defines the importance that our data remains private and that it is not intercepted while being transmitted across the internet. </p>
+      <p>When dealing with computer security, the AIC triad must be considered. This involves the three catagories of availability, integrity and confidentiality which must be delicately balanced in order to ensure the development of a well robust, easy to use sytem. The way in which these are balanced depends heavily on the level of security required for the sytem as in some cases integrity and confidentiality may be partially sacrificed for better availability or vice versa. Availability refers to maintaining functionality of our digital systems so that our data is available when and where we need it. Integrity identifies the importance of maintaining accurate data which can be neither altered nor deleted by either human error or through malicious attacks. Finally, confidentiality defines the importance that our data remains private and that it is not intercepted while being transmitted across the internet. </p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
     <div class="content" id="passwords">
       <h1>Passwords - choice, usage and strorage</h1>
       <p>Passwords are a vital necessity to computer security and so we must apply careful consideration, especially when applied to high security sytems. There are a series of rules to follow in order to safely choose, use and store your passwords. When choosing your password, you should aim to maximise the complexity and randomness as this will reduce the risk of it being discovered with a brute force attack. Since there are 96 possible characters to use for your password, each character you add will make it 96 times more difficult to guess. You should also use two-factor authentication as this will ensure that even if hackers discover your password, they won't be able to gain access without the second authentication method which is often touch of face id or a message with a key to your phone. Network engineers often set heriachries in order to restrict access of certain users to particular parts of a network, minimizing the risk if the password were to become comprimised.  You should avoid using your passwords on multiple sites as your password could become breached by hackers on a low security site and used to access your confidential information on a high security site.</p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
     <div class="content" id="firewalls">
       <h1>Network protection and firewalls</h1>
       <p>Firewalls sit between your computer and the internet, denying unauthorised access to and from your computer. They are designed to intercept incoming malicious traffic and prevent sensitive information from leaving the network. Proxy servers are used as additional firewalls to filter sites and cache content for faster access. Caching proxy hold local coppies of frequently requested sites in order to reduce bandwidth usage and increase performance. Content-filtering web proxy servers provide control over content relayed through the proxy while other proxies and can hide IP addresses. An uninteruptable power supply (UPS) is a unit that provides power to a system for a short period of time when the main power source crashes, allowing time for the servers to be safely shut down. If the power source suddenly goes out, it can cause files to become corrupted and affect data integrity. They can also smooth out power spikes and dips in order to maintain a steady power supply at all times. UPS are generally used for survers as opposed to personal computers and are placed between the server and the power connection. Backups are a procedure in which a copy of your data from a personal file is made and stored elswhere. Cloud backups are the most common and provide a backup copy even if the entire local network is destroyed.</p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
     <div class="content" id="users">
       <h1>Social engineering and user protection</h1>
       <p>Their are various types of malware used to attack a system - let's go though the main types. A keylogger can be used to record everything the user types in order to obtain passwords and other sensitive information. Randsomware locks the user out of their or files until a randsome is paid to the attacker. A trojan horse enters a computer under the appearance of a desired intallation such as a downloaded game. Spyware steals private information from a computer system for a third party such as a competitor or intelligence agency. Worms are a type of walware that replicate themselves, looking for pathways to other computers. A virus is a malicious executable code attached to a file that spreads when the file is passed from system to system.</p>
       <img src="img/artificial-intelligence.jpg" alt="artificial-intelligence">
-      <a href="#"><i class="fas fa-chevron-circle-left fa-3x" id="scroll-left"></i></a>
-      <a href="#"><i class="fas fa-chevron-circle-right fa-3x" id="scroll-right"></i></a>
     </div>
   </section>
   <section class="quiz security">
@@ -67,6 +58,58 @@
     <div id="quiz"></div>
     <button id="submit">Get Results</button>
     <div id="results"></div>
+  </section>
+  <section class="drag-and-drop">
+    <h1>Throughout this topic you should have learnt the following:</h1>
+    <div
+    class="parent"
+    ondragover="onDragOver(event)"
+    ondrop="onDrop(event)"
+    >
+      <div class="origin">
+        <p>To Do</p>
+        <div
+          id="draggable-1"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event)"
+        >
+          The importance of the choice, usage and storage of passwords to maintaining network security.
+        </div>
+        <div
+        id="draggable-2"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        The availability, integrity and confidentiality AIC triad.
+      </div>
+      <div
+        id="draggable-3"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        The design of network protection systems including firewalls, proxy servers, UPS and backups.
+      </div>
+      <div
+        id="draggable-4"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        The importance of computer security and social engineering for real world implications.
+      </div>
+      </div>
+
+      <div
+        class="dropzone"
+        ondragover="onDragOver(event)"
+        ondrop="onDrop(event)"
+      >
+      <p>Done</p>
+      </div>
+    </div>
   </section>
   <footer>
     <p>The Computer Science Hub &copy; 2021</p>
