@@ -51,12 +51,6 @@ nav li:hover:not(#logo) {
   background: var(--dark);
 }
 
-@media only screen and (max-width: 800px) {
-  nav li {
-    width: 100vw;
-  }
-}
-
 /*Landing page*/
 
 .showcase {
@@ -69,7 +63,7 @@ nav li:hover:not(#logo) {
 }
 
 .showcase h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin-top: 5%;
 }
 
@@ -121,16 +115,44 @@ iframe {
 }
 
 #details img {
-  text-align: center;
   border-radius: 20px;
   border: var(--border);
-  margin: 1vw;
+  margin: 10px 0px 10px 0px;
   width: 20vw;
 }
 
+#details .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width: 800px) {
+  nav ul {
+    flex-direction: column;
+    width: 80vw;
+    margin: 0px 6vw 0px 6vw;
+  }
+
+  .showcase h1 {
+    font-size: 30px;
+    margin-top: 20px
+  }
+
+  .showcase p {
+    font-size: 18px;
+  }
+
+  #details p {
+    font-size: 16px;
+  }
+
   #details img {
     width: 40vw;
+}
+
+  #logo {
+    display: none;
   }
 }
 
